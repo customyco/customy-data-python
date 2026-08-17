@@ -41,7 +41,7 @@ class CustomyDataTests(unittest.TestCase):
         )
 
     def test_portable_six_call_conformance(self):
-        vectors = json.loads((ROOT.parent / "sdk-data" / "conformance" / "customer-data-v1.json").read_text())
+        vectors = json.loads((ROOT / "conformance" / "customer-data-v1.json").read_text())
         self.assertEqual(vectors["contract"], CONFORMANCE_CONTRACT)
         transport = RecordingTransport([202] * len(vectors["eventTypes"]))
         client = self.client(transport)
