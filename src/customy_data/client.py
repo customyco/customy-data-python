@@ -9,7 +9,7 @@ from datetime import datetime, timezone
 from typing import Any, Callable, Dict, Iterable, List, Mapping, MutableMapping, Optional, Set, Tuple
 from urllib import error, request
 
-SDK_VERSION = "0.1.1"
+SDK_VERSION = "0.1.2"
 CONFORMANCE_CONTRACT = "customy.customer-data-sdk.conformance.v1"
 RETRYABLE_STATUSES = {429, 500, 502, 503, 504}
 FORBIDDEN_TENANT_FIELDS = {
